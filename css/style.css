@@ -19,7 +19,6 @@ body {
 }
 
 /* general disposition flexbox */
-
 main {
     display: inline-flex;
 }
@@ -88,7 +87,6 @@ footer {
 }
 
 /* header disposition  */
-
 header div {
     display: flex;
     justify-content: space-evenly;
@@ -112,7 +110,6 @@ header span:hover {
 }
 
 /* footer disposition  */
-
 footer {
     display: flex;
     justify-content: space-between;
@@ -143,7 +140,6 @@ footer span:hover {
 }
 
 /* Nav disposition  */
-
 nav div {
     display: flex;
     flex-direction: column;
@@ -159,8 +155,8 @@ nav div span {
     background-color: rgb(59, 0, 43);
     color: rgb(249, 166, 78);
     border-radius: 10px;
-    height: 10%;
-    width: 75%;
+    height: 40px;
+    width: 100px;
     padding: 5px 8px;
 }
 
@@ -169,7 +165,6 @@ nav div span:hover {
 }
 
 /* general section style */
-
 article div {
     background-color: rgb(29, 92, 86);
 }
@@ -208,7 +203,6 @@ section:first-of-type article:first-of-type div span:last-child {
 }
 
 /* Second article disposition  */
-
 section:first-of-type article:last-of-type div {
     display: flex;
     width: 300px;
@@ -242,7 +236,6 @@ section:first-of-type article:last-of-type div span:last-child {
 }
 
 /* Third article disposition  */
-
 section:last-of-type article:first-of-type div {
     display: flex;
     justify-content: space-between;
@@ -291,7 +284,6 @@ section:last-of-type article:first-of-type div aside:last-of-type span:last-chil
 }
 
 /* Four article disposition  */
-
 section:last-of-type article:last-of-type div {
     display: flex;
     flex-wrap: wrap;
@@ -341,4 +333,142 @@ section:last-of-type article:last-of-type div aside:last-of-type span:nth-child(
 
 section:last-of-type article:last-of-type div aside:last-of-type span:last-child {
     order: 2;
+}
+
+/* responsive design laptop*/
+@media (max-width: 1600px) {
+
+    p,
+    footer p {
+        font-size: 24px;
+    }
+
+    header span {
+        font-size: 22px;
+        padding: 5px;
+        height: 40px;
+    }
+
+    footer span,
+    nav span {
+        font-size: 22px;
+        padding: 5px;
+        height: 40px;
+    }
+}
+
+/* responsive design small laptop*/
+@media (max-width: 1200px) {
+
+    main {
+        width: 100%;
+    }
+
+    section {
+        width: 45%;
+    }
+
+    article {
+        width: 110%;
+    }
+
+    span {
+        font-size: 20px;
+    }
+
+    p,
+    footer p {
+        font-size: 20px;
+    }
+
+    nav span {
+        font-size: 20px;
+        padding: 0px;
+    }
+
+    header span,
+    footer span {
+        font-size: 20px;
+        padding: 3px;
+        height: 30px;
+    }
+
+    nav:last-of-type {
+        display: none;
+    }
+}
+
+/* responsive design tablet*/
+
+@media (max-width: 1100px) {
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100vw;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        width: 100vw;
+        height: 10vh;
+    }
+
+    nav div {
+        flex-direction: row;
+    }
+
+    section {
+        width: 50%;
+    }
+
+    nav div span {
+        font-size: 18px;
+        width: 70px;
+        height: 30px;
+    }
+}
+
+/* responsive design small tablet*/
+@media (max-width: 700px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        width: 200vw;
+    }
+
+    article {
+        display: flex;
+        width: 100%;
+    }
+
+    nav div span {
+        font-size: 16px;
+        width: 60px;
+        height: 30px;
+        margin: auto 5px;
+    }
+}
+
+/* responsive design phone*/
+
+@media (max-width: 415px) {
+
+    header {
+        height: 22vh;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-evenly;
+        height: 16vh;
+    }
+
+    nav {
+        height: 12vh;
+    }
+
+    article {
+        height: 35vh;
+    }
 }
